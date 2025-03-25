@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    background-color: black;
+}
+
+.navbar-brand {
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+}
+
+#searchContainer .form-control {
+    position: relative;
+    border-radius: 20px;     
+    border: none; 
+    box-shadow: none;
+    width: 113px; 
+    opacity: 1;         
+    transition: width 0.3s, opacity 0.3s;
+}
+
+
