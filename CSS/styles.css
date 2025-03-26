@@ -1,26 +1,89 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Define a fonte */
+    background-color: var(--bg-color); /* Aplica a cor de fundo baseada na variável (modo escuro por padrão) */
+    color: var(--text-color); /* Aplica a cor do texto baseada na variável */
 }
 
+/* Configuração do navbar */
 .navbar {
-    position: relative;
-    background-color: black;
+ /* Mantém o posicionamento padrão */
+    background-color: var(--navbar-bg); /* Usa a variável para alternar entre claro e escuro */
 }
 
+/* Estiliza os links do navbar */
+.navbar-nav .nav-link,
+.navbar .btn,
+.navbar .bi {
+    color: var(--navbar-text) !important; /* Usa a variável para alternar a cor do texto */
+}
+
+/* Centraliza a logo no navbar */
 .navbar-brand {
-    top: 50% ;
-    left: 50% ;
-    transform: translate(-50%, -50%);
+    position: absolute; /* Mantém a logo fixa */
+    top: 10px; /* Ajusta a posição no topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Garante que fique no centro exato */
+    z-index: 1050; /* Mantém acima de outros elementos */
 }
 
+.dropdown-item:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+
+/* Estiliza o campo de pesquisa */
 #searchContainer .form-control {
-    position: relative;
-    border-radius: 20px;     
-    border: none; 
-    box-shadow: none;
-    width: 113px; 
-    opacity: 1;         
-    transition: width 0.3s, opacity 0.3s;
+    position: relative; /* Mantém a posição padrão */
+    border-radius: 20px; /* Borda arredondada */
+    border: none; /* Remove borda */
+    box-shadow: none; /* Remove sombra */
+    margin: auto; /* Centraliza */
+    opacity: 1; /* Mantém visível */
+    transition: width 0.3s, opacity 0.3s; /* Animação ao expandir */
+    width: 117px; /* Define a largura */
+    font-size: 13px; /* Define o tamanho do texto */
+}
+.light-mode #searchContainer .form-control {
+    border: 1px solid #000000;
 }
 
+.light-mode .dropdown-menu {    /* Muda a cor do menu dropdown no modo claro */
+    background-color: #a0a0a0; 
+}
+.light-mode .dropdown-item { /* Arruma a cor dos itens do menu dropdown no modo claro */
+    background-color: #a0a0a0;
+    color:#ffffff;
+}
+.light-mode .dropdown-item:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
 
+/* Ajusta o dropdown de usuário */
+#doprdownPerson {
+    min-width: auto; /* Permite que o tamanho se ajuste automaticamente */
+    width: fit-content; /* Ajusta ao conteúdo */
+    padding: 5px 5px; /* Define espaçamento interno */
+}
+
+/* Ajusta o tamanho do dropdown do carrinho */
+.small-dropdown {
+    min-width: auto; /* Ajuste automático da largura */
+    padding: 10px; /* Define espaçamento interno */
+}
+
+/* Define as variáveis para o modo escuro (padrão) */
+:root {
+    --bg-color: #000000; /* Fundo preto */
+    --text-color: #ffffff; /* Texto branco */
+    --navbar-bg: #000000; /* Navbar preto */
+    --navbar-text: #ffffff; /* Texto branco no navbar */
+}
+
+/* Define as variáveis para o modo claro */
+.light-mode {
+    --bg-color: #ffffff; /* Fundo branco */
+    --text-color: #000000; /* Texto preto */
+    --navbar-bg: #ffffff; /* Navbar cinza claro */
+    --navbar-text: #000000; /* Texto preto no navbar */
+}
