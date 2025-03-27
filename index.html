@@ -88,27 +88,40 @@
             </div>
         </div>
     </nav>
+    <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/banner_1.jpg" class="d-block w-100" alt="Imagem banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner_2.jpg" class="d-block w-100" alt="Imagem banner 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>           
     <script>
+        // Adaptador de um script gerado pelo chatGPT
         document.addEventListener("DOMContentLoaded", function () {
             const toggleDarkMode = document.getElementById("toggleDarkMode");
             const darkModeIcon = document.getElementById("darkModeIcon");
-            const logoImage = document.querySelector(".navbar-brand img");  // Seletor da imagem do logo
+            const logoImage = document.querySelector(".navbar-brand img"); 
             
             toggleDarkMode.addEventListener("click", function () {
                 document.body.classList.toggle("light-mode");
-
-                // Alterna o ícone entre lua e sol
                 if (document.body.classList.contains("light-mode")) {
                     darkModeIcon.classList.replace("bi-moon", "bi-sun");
 
-                    // Altera a imagem do logo para o modo claro
-                    logoImage.src = 'assets/logo-light-mode.png';  // Substitua com o caminho correto da imagem clara
+                    logoImage.src = 'assets/logo-light-mode.png';
                 } else {
                     darkModeIcon.classList.replace("bi-sun", "bi-moon");
 
-                    // Altera a imagem do logo para o modo escuro
-                    logoImage.src = 'assets/logo.png';  // Substitua com o caminho correto da imagem escura
+                    logoImage.src = 'assets/logo.png'; 
                 }
             });
         });
