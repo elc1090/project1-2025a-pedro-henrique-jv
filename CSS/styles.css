@@ -96,3 +96,86 @@ body {
     max-height: 400px;
     object-fit: cover;
 }
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.dropdown-item {
+    flex: 1;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.light-mode .dropdown-item {
+    border: none;
+    background-color: inherit;
+}
+
+#botaoOrdenarPor {
+    background-color: #000000; 
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    border-color: #fff;
+    border-radius: 20px; 
+    padding: 10px 15px; 
+    font-weight: bold;
+}
+
+.light-mode #botaoOrdenarPor {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+}
+
+.product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-info {
+    margin-top: 15px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+    color: inherit; /* Pode ser usardo para inverter as cores (troca de modos) */
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+
+}
+
+.product-payment-methods {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+@media (max-width: 768px) { /* Responsividade: Tentar aplicar no banner dps */
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
