@@ -153,7 +153,7 @@ body {
     font-size: 16px;
     color: #fff;
     margin: 10px 0;
-    color: inherit; /* Pode ser usardo para inverter as cores (troca de modos) */
+    color: inherit;
 }
 
 .product-price {
@@ -168,7 +168,7 @@ body {
     color: #a0a0a0;
 }
 
-@media (max-width: 768px) { /* Responsividade: Tentar aplicar no banner dps */
+@media (max-width: 768px) { 
     .products-container {
         flex-direction: column;
         align-items: center;
@@ -177,5 +177,75 @@ body {
     .product-item {
         max-width: 90%;
         margin-bottom: 20px;
+    }
+}
+
+.newsletter-section {
+    background-color: #374151;  
+    padding: 40px;
+    flex-direction: column; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.newsletter-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.newsletter-form input {
+    width: 100%; 
+    max-width: 900px; 
+    min-width: 300px; 
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px #000000;
+}
+
+.newsletter-form button {
+    padding: 8px 15px;
+    border-radius: 20px; 
+    border: none;
+    background-color: #000000; 
+    color: white;
+    transition: none;
+}
+
+.newsletter-form button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .newsletter-section {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
+    }
+    .newsletter-form input {
+        align-items: center;
+        max-width: 100%; 
+        min-width: 80%; 
     }
 }
