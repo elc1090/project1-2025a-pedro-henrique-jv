@@ -18,7 +18,6 @@ body {
     --navbar-text: #000000; 
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     background-color: var(--navbar-bg); 
@@ -91,7 +90,6 @@ body {
     padding: 10px; 
 }
 
-/* Banner */
 #carouselBanner {
     max-width: 100%;
     margin: auto;
@@ -99,7 +97,6 @@ body {
     margin-top: 20px;
 }
 
-/* Produtos */
 .products-container {
     display: flex;
     justify-content: space-between;
@@ -140,7 +137,6 @@ body {
     color:#374151;
 }
 
-/* Botao ordenar */
 #botaoOrdenarPor {
     background-color: #000000; 
     color: rgb(255, 255, 255);
@@ -156,7 +152,6 @@ body {
     border-color: #000000;
 }
 
-/* Botao filtrar */
 #botaoFiltrar {
     background-color: #000000; 
     color: rgb(255, 255, 255);
@@ -173,12 +168,10 @@ body {
     border-color: #000000;
 }
 
-/* Paginaçao */
 .pagination-container {
     padding: 20px;
 }
 
-/* Campo de cadastro por email */
 .newsletter-section {
     background-color: #374151;  
     padding: 40px;
@@ -229,7 +222,6 @@ body {
     color: white;
 }
 
-/* Footer */
 .footer {
     background-color: #000000;
     display: flex;
@@ -295,7 +287,6 @@ body {
     padding: 10px 0;
 }
 
-/* Botao de ajdua */
 .help-button {
     position: fixed;
     bottom: 20px;
@@ -309,3 +300,77 @@ body {
     box-shadow: none;
     z-index: 1000;
 }
+
+.product-purchase-container {
+    display: flex;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: 100px 250px;
+    gap: 100px;
+}
+
+.light-mode .product-purchase-container {
+    background-color: #374151;
+}
+
+.product-image-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.product-details-column {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.product-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.purchase-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-now-button,
+.add-to-cart-button {
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buy-now-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.add-to-cart-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
