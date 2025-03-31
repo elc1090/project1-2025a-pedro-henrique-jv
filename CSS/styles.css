@@ -301,6 +301,11 @@ body {
     z-index: 1000;
 }
 
+.light-mode .help-button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .product-purchase-container {
     display: flex;
     background-color: #000000;
