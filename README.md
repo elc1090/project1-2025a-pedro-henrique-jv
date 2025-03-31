@@ -1,66 +1,43 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-0GsTofh)
 # Projeto: Remake de site/app web
 
-> 1. Leia com atenção as instruções abaixo para editar este README em formato Markdown.
-> 2. Substitua todos os trechos de texto iniciados com "Substitua" por informações do seu projeto, conforme solicitado em cada trecho.
-> 3. Substitua a imagem por um screenshot do projeto (o arquivo pode ser armazenado no repositório ou em URL externa). GIFs animados também são permitidos!
-> 4. Remova todas as instruções de entrega.
-> 5. Double-check: Certifique-se de que seu README.md não contenha instruções de entrega!
-> 6. Entregue este README.md dentro da pasta raiz do seu repositório de entrega. Peça ajuda se não souber como editar ou entregar!
-> Opcional: você pode alterar a formatação do README, mas mantenha todas as informações solicitadas
+![Screenshot do projeto](img/print-projeto.gif "Screenshot do projeto.")
 
-![Substitua a imagem ao lado por um screenshot do seu projeto](img/chops-ux-step-4.png "Screenshot do projeto. Imagem temporária extraída de https://mdswanson.com/static/chops-ux-step-4.png")
+[Acesse o site publicado](https://elc1090.github.io/project1-2025a-pedro-henrique-jv/)
 
+## Desenvolvedor(a)
+**Nome:** Pedro H. Jovanowichs  
+**Curso:** Sistemas de Informação
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+## Cliente
+**Nome:** Rodrigo Appelt
 
+## Site/app original
 
-#### Desenvolvedor(a)
-Substitua este texto pela sua identificação: nome e curso
+### Link
+[Site original](https://reserva.ink/hickzeraa)
 
-#### Cliente
-Substitua este texto pela identificação do cliente
+### Descrição
+O site oferece uma variedade de vestuário, incluindo camisetas, regatas, moletons e camisetas oversized, com estampas e frases bem-humoradas. Possui uma interface organizada, facilitando a navegação e, ao mesmo tempo, chamativa. O código, apesar de extenso e complexo, é bem organizado.
 
+## Demanda do(a) Cliente
+Gostaria que tivesse uma página para cada produto, botão que troca entre modo escuro e claro, barra de pesquisa entre as páginas cadastradas e um banner animado no topo com mensagens promocionais e/ou anúncios. 
 
+## Desenvolvimento
+O remake foi desenvolvido com o objetivo de manter a aparência o mais fiel possível ao original. No entanto, algumas diferenças foram introduzidas devido a escolhas de design e às demandas do cliente. O trabalho foi realizado de forma incremental, desenvolvendo um elemento da página por vez. As demandas foram implementadas conforme o grau de dificuldade e a parte da página em desenvolvimento.
 
+## Tecnologias
+- **HTML5** para a estrutura da página.
+- **CSS3 com Bootstrap** para estilização.
+- **JavaScript** para funcionalidades interativas.
 
-#### Site/app original
+## Ambiente de Desenvolvimento
+- **Editor:** VS Code
+- **Extensão:** Live Server
 
-##### Link
-Substitua este texto pela URL do site/app escolhido
+## Referências e Créditos
+- **Bootstrap:** [Documentação](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- **Bootstrap Icons:** [Ícones](https://icons.getbootstrap.com/)
+- **ChatGPT:** Usado para gerar o script que alterna entre os modos light e dark ([ChatGPT](https://chatgpt.com/))
 
-##### Descrição
-Substitua este texto por uma descrição do site/app escolhido. Inclua observações sobre seu conteúdo, aparência e código.
+Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2025a) no semestre 2025a.
 
-#### Demanda do(a) cliente
-Substitua este texto pela demanda do(a) cliente
-
-#### Desenvolvimento
-
-Substitua este texto por uma descrição do processo de desenvolvimento, explicando suas escolhas para o remake e etapas do trabalho (por exemplo, como foi coletado o conteúdo, como você lidou com as demandas, etc.)
-
-
-#### Tecnologias
-
-Substitua este trecho por uma lista detalhada de tecnologias usadas (tanto as básicas, como HTML e CSS, como as mais específicas, por exemplo Tailwind, etc.):
-- ...
-- ...
-- 
-
-#### Ambiente de desenvolvimento
-
-Substitua este trecho por uma lista detalhada dos ambientes/ferramentas de desenvolvimento que você usou (por exemplo, VS Code + alguma extensão, etc.)
-- ...
-- ...
-
-#### Referências e créditos
-
-Substitua este trecho por uma lista bem detalhada de todo material que você consultou para ajudar no projeto, por exemplo:  URL de templates usados, URL de icon kits usados, créditos para colegas que colaboraram, geradores de código (incluindo alguns prompts usados para o ChatGPT, se for o caso)
-- ...
-- ...
-
-
-
-
----
-Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2025a) em 2025a
